@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "AddFeature";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Özellik Ekleme Sayfası</h2>
+<form method="post">
+    <label>Özellik başlığı</label>
+    <input type="text" class="form-control" name="FeatureTitle" required />
+    <br />
+    <label>Logo</label>
+    <input type="text" class="form-control" name="FeatureLogo" required />
+    <br />
+    <label>Detay</label>
+    <input type="text" class="form-control" name="FeatureDescription" required />
+    <br />
+    <button class="btn btn-info">Özellik Ekle</button>
+
+</form>
+

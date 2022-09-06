@@ -1,0 +1,21 @@
+﻿@model PersonelProject.Models.TblImage
+@{
+    ViewBag.Title = "EditImage";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Fotoğraf Düzenleme Sayfası</h2>
+<form method="post">
+
+    @Html.HiddenFor(x => x.ImageID, new { @class = "form-control" })
+
+
+    <label>Url</label>
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+    <br />
+    <label>Detay</label>
+    @Html.TextBoxFor(x => x.ImageDescription, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-primary">Fotoğraf Güncelle</button>
+</form>

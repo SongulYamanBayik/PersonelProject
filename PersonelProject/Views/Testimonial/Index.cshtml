@@ -1,0 +1,36 @@
+﻿@using PersonelProject.Models
+@model List<TblTestimonial>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Referanslar</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Adı</th>
+        <th>Fotoğraf</th>
+        <th>Ünvanı</th>
+        <th>Detay</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TestimonialID</td>
+            <td>@item.TestimonialName</td>
+            <td>@item.TestimonialImage</td>
+            <td>@item.TestimonialTitle</td>
+            <td>@item.TestimonialDescription</td>
+            <td><a href="/Testimonial/DeleteTestimonial/@item.TestimonialID" class="btn btn-danger">SİL</a></td>
+            <td><a href="/Testimonial/EditTestimonial/@item.TestimonialID" class="btn btn-success">GÜNCELLE</a></td>
+
+        </tr>
+    }
+</table>
+
+<a href="/Testimonial/AddTestimonial/" class="btn btn-primary">Yeni Referans Ekle</a>
+

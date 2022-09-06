@@ -1,0 +1,35 @@
+﻿@using PersonelProject.Models
+@model List<TblFeature>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Özellik Listesi</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Başlık</th>
+        <th>Logo</th>
+        <th>Detay</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FeatureID</td>
+            <td>@item.FeatureTitle</td>
+            <td>@item.FeatureLogo</td>
+            <td>@item.FeatureDescription</td>
+            <td><a href="/Feature/DeleteFeature/@item.FeatureID" class="btn btn-danger">SİL</a></td>
+            <td><a href="/Feature/EditFeature/@item.FeatureID" class="btn btn-success">GÜNCELLE</a></td>
+
+        </tr>
+    }
+</table>
+
+<a href="/Feature/AddFeature/" class="btn btn-primary">Yeni Özellik Ekle</a>
+
+

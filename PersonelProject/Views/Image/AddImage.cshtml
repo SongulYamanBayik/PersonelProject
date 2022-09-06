@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "AddImage";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Fotoğraf Ekleme Sayfası</h2>
+<form method="post">
+    <label>URL</label>
+    <input type="text" class="form-control" name="ImageUrl" required />
+    <br />
+    <label>Detay</label>
+    <input type="text" class="form-control" name="ImageDescription" required />
+    <br />
+    <button class="btn btn-info">Fotoğraf Ekle</button>
+
+</form>
+

@@ -1,0 +1,25 @@
+﻿@model PersonelProject.Models.TblFeature
+@{
+    ViewBag.Title = "EditFeature";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Özellik Düzenleme Sayfası</h2>
+<form method="post">
+
+    @Html.HiddenFor(x => x.FeatureID, new { @class = "form-control" })
+
+
+    <label>Özellik Başlığı</label>
+    @Html.TextBoxFor(x => x.FeatureTitle, new { @class = "form-control" })
+    <br />
+    <label>Logo</label>
+    @Html.TextBoxFor(x => x.FeatureLogo, new { @class = "form-control" })
+    <br />
+
+    <label>Özellik Detayı</label>
+    @Html.TextBoxFor(x => x.FeatureDescription, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-primary">Özellik Güncelle</button>
+</form>
+
