@@ -128,6 +128,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\EducationController.cs" />
     <Compile Include="Controllers\ExperienceController.cs" />
     <Compile Include="Controllers\FeatureController.cs" />
@@ -279,6 +281,26 @@
     <Content Include="Views\Image\Index.cshtml" />
     <Content Include="Views\Image\AddImage.cshtml" />
     <Content Include="Views\Image\EditImage.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\HeaderPartial.cshtml" />
+    <Content Include="Views\Default\NavbarPartial.cshtml" />
+    <Content Include="Views\Default\BannerPartial.cshtml" />
+    <Content Include="Views\Default\SkillPartial.cshtml" />
+    <Content Include="Views\Default\FeaturePartial.cshtml" />
+    <Content Include="Views\Default\ImagePartial.cshtml" />
+    <Content Include="Views\Default\ExperincePartial.cshtml" />
+    <Content Include="Views\Default\EducationPartial.cshtml" />
+    <Content Include="Views\Default\TestimonalPartial.cshtml" />
+    <Content Include="Views\Default\FooterPartial.cshtml" />
+    <Content Include="Views\Default\scriptPartial.cshtml" />
+    <Content Include="Views\Shared\UILayout.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\About\AboutMe.cshtml" />
+    <Content Include="Views\About\Welcome.cshtml" />
+    <Content Include="Views\About\Subscribe.cshtml" />
+    <Content Include="Views\About\Footer.cshtml" />
+    <Content Include="Views\About\Script.cshtml" />
+    <Content Include="Views\About\Statistics.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
